@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'ubuntub';
+    src: url('../../assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ubuntum';
+    src: url('../../assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ubuntur';
+    src: url('../../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+nav.sidebar {
+    width: 32%;
+    height: 100%;
+    background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+nav.sidebar .steps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav.sidebar .steps .step {
+    width: 85%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+}
+
+nav.sidebar .steps .step .number span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 2rem;
+    font-family: 'ubuntub', sans-serif;
+    font-size: 1.2rem;
+    color: #d3d3d3;
+    border: 0.2rem solid #d3d3d3;
+    padding: 1.3rem;
+    border-radius: 60%;
+}
+
+nav.sidebar .steps .step .number .active {
+    background-color: #b6dcff;
+    color: #000;
+}
+
+nav.sidebar .steps .step .text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.sidebar .steps .step .text .text_name {
+    font-family: 'ubuntub', sans-serif;
+    font-size: 0.8rem;
+    color: #c4c4c4;
+}
+
+nav.sidebar .steps .step .text .text_title {
+    font-family: 'ubuntub', sans-serif;
+    font-size: 1rem;
+    color: #d3d3d3;
+}
