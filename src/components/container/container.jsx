@@ -33,7 +33,6 @@ let Container = () => {
         step[3].children[0].children[0].classList.remove("active")
 
         step[index + 1].children[0].children[0].classList.add("active")
-        console.log(step)
     }
 
     let back = () => {
