@@ -1,4 +1,109 @@
-.content {
+.content#info {
     width: 68%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content#info .text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.content#info .text .title,
+.content#info .text .subtitle {
+    width: 100%;
+    text-align: start;
+}
+
+.content#info .text .title span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #052957;
+}
+
+.content#info .text .subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #afafaf;
+}
+
+.content#info form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.content#info form .name,
+.content#info form .email,
+.content#info form .phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.content#info form .name .title,
+.content#info form .email .title,
+.content#info form .phone .title {
+    width: 100%;
+}
+
+.content#info form .name .title label,
+.content#info form .email .title label,
+.content#info form .phone .title label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content#info form .name .title label span,
+.content#info form .email .title label span,
+.content#info form .phone .title label span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.content#info form .name .title label .error,
+.content#info form .email .title label .error,
+.content#info form .phone .title label .error {
+    color: red;
+    display: none;
+}
+
+.content#info form .name .field,
+.content#info form .email .field,
+.content#info form .phone .field {
+    width: 100%;
+}
+
+.content#info form .name .field input,
+.content#info form .email .field input,
+.content#info form .phone .field input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #d9d8dc;
+    outline: none;
+}
+
+.content#info form .name .field input:focus,
+.content#info form .email .field input:focus,
+.content#info form .phone .field input:focus {
+    outline: 2px solid #534d95;
+}
+
+.content#info .btn {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
 }

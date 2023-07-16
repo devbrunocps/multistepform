@@ -1,0 +1,158 @@
+.content#plan {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.content#plan .text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.content#plan .text .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #052957;
+}
+
+.content#plan .text .subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #afafaf;
+}
+
+
+.content#plan .plans {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content#plan .plans .cards {
+    display: flex;
+    justify-content: space-between;
+    min-height: 13rem;
+    align-items: flex-start;
+}
+
+.content#plan .plans .cards .card-plan {
+    text-align: center;
+    width: 8.7rem;
+    min-height: 8.5rem;
+    border: 2px solid #d9d8dc;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.content#plan .plans .cards .active {
+    border: 2px solid #042959;
+}
+
+.content#plan .plans .cards .card-plan .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.content#plan .plans .cards .card-plan .content-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.content#plan .plans .cards .card-plan .content-card .title,
+.content#plan .plans .cards .card-plan .content-card .price,
+.content#plan .plans .cards .card-plan .content-card .free {
+    text-align: start;
+}
+
+.content#plan .plans .cards .card-plan .content-card .title span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #052957;
+}
+
+.content#plan .plans .cards .card-plan .content-card .price span {
+    font-size: 1rem;
+    color: #a0a1ab;
+    font-weight: 400;
+}
+
+.content#plan .plans .cards .card-plan .content-card .free span {
+    font-size: 0.85rem;
+    color: #042959;
+    font-weight: 500;
+}
+
+.content#plan .plans .time {
+    width: 100%;
+    background-color: #f8f9fe;
+    padding: 0.5rem 0;
+}
+
+.content#plan .plans .time label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content#plan .plans .time .switch .switch-wrapper {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.content#plan .plans .time .switch .switch-wrapper .switch-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #042959;
+}
+
+.content#plan .plans .time .switch .switch-wrapper input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.content#plan .plans .time .switch .switch-wrapper .switch-button::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    transition: 0.4s all ease;
+    background-color: #f8f9fe;
+}
+
+.content#plan .plans .time .switch .switch-wrapper input:checked+.switch-button::before {
+    transform: translateX(28px);
+}
+
+.content#plan .btns {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}

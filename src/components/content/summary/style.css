@@ -1,0 +1,34 @@
+.content#summary {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content#summary .finished {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content#summary .finished .icon {
+    font-size: 4rem;
+    color: #03285b;
+}
+
+.content#summary .finished span {
+    font-size: 2rem;
+    color: #03285b;
+}
+
+.content#summary .finished p {
+    width: 70%;
+    font-size: 1.1rem;
+    color: gray;
+    text-align: center;
+}

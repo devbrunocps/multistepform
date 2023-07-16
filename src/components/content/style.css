@@ -1,0 +1,24 @@
+button {
+    padding: 1rem 1.4rem;
+    background-color: #03285b;
+    font-size: 1rem;
+    border: none;
+    color: #e7e7e7;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #174a89;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-back {
+    background-color: transparent;
+    color: #a3a3aa;
+}
+
+.btn-back:hover {
+    background-color: transparent;
+}

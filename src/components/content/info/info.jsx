@@ -3,7 +3,7 @@ import Next from '../next'
 
 let Info = (props) => {
     return (
-        <div className="content">
+        <div className="content" id='info'>
             <div className="text">
                 <div className="title">
                     <span>Personal Info</span>
@@ -14,10 +14,10 @@ let Info = (props) => {
             </div>
             <form action="">
                 <div className="name">
-                    <div className="text">
+                    <div className="title">
                         <label htmlFor="">
                             <span>Name</span>
-                            <span>This field is required</span>
+                            <span className='error'>This field is required</span>
                         </label>
                     </div>
                     <div className="field">
@@ -26,10 +26,10 @@ let Info = (props) => {
                 </div>
 
                 <div className="email">
-                <div className="text">
+                    <div className="title">
                         <label htmlFor="">
                             <span>Email Address</span>
-                            <span>This field is required</span>
+                            <span className='error'>This field is required</span>
                         </label>
                     </div>
                     <div className="field">
@@ -38,20 +38,19 @@ let Info = (props) => {
                 </div>
 
                 <div className="phone">
-                <div className="text">
+                    <div className="title">
                         <label htmlFor="">
                             <span>Phone Number</span>
-                            <span>This field is required</span>
+                            <span className='error'>This field is required</span>
                         </label>
                     </div>
                     <div className="field">
-                        <input type="tel" placeholder='e.g. +1 234 567 890'/>
+                        <input type="tel" placeholder='e.g. +1 234 567 890' />
                     </div>
                 </div>
             </form>
-
             <div className="btn">
-                <Next next={props.next}/>
+                <Next next={props.next} text={'Next Step'} />
             </div>
         </div>
     )

@@ -1,22 +1,8 @@
-@font-face {
-    font-family: 'ubuntub';
-    src: url('../../assets/fonts/Ubuntu-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'ubuntum';
-    src: url('../../assets/fonts/Ubuntu-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'ubuntur';
-    src: url('../../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
-}
 
 nav.sidebar {
     width: 32%;
     height: 100%;
-    background-image: url('../../assets/images/bg-sidebar-desktop.svg');
+    background-image: url('../../../public/assets/images/bg-sidebar-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -47,7 +33,6 @@ nav.sidebar .steps .step .number span {
     align-items: center;
     width: 30%;
     height: 2rem;
-    font-family: 'ubuntub', sans-serif;
     font-size: 1.2rem;
     color: #d3d3d3;
     border: 0.2rem solid #d3d3d3;
@@ -67,13 +52,12 @@ nav.sidebar .steps .step .text {
 }
 
 nav.sidebar .steps .step .text .text_name {
-    font-family: 'ubuntub', sans-serif;
     font-size: 0.8rem;
     color: #c4c4c4;
 }
 
 nav.sidebar .steps .step .text .text_title {
-    font-family: 'ubuntub', sans-serif;
     font-size: 1rem;
+    font-weight: 500;
     color: #d3d3d3;
 }
